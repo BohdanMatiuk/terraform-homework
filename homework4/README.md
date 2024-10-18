@@ -23,7 +23,8 @@ No modules.
 ## Inputs
 
 
-Create terraform.tfvars file with following content
+Create terraform.tfvars file with following content:
+
 region = ""
 
 availability_zone = ""
@@ -32,13 +33,18 @@ ami_id = ""
 
 To Launch EC2 instances in spesific regin please provide values ""
 
-example
+example:
 
 region = "us-east-2"
 
 availability_zone = "us-east-2a"
 
 ami_id = "ami-050cd642fd83388e4" 
+
+-Run terraform init to initializes a working directory
+
+-Run terraform apply to create resources
+
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
