@@ -31,7 +31,7 @@ availability_zone = ""
 
 ami_id = ""
 
-To Launch EC2 instances in spesific regin please provide values ""
+To Launch EC2 instances in spesific region please provide values ""
 
 example:
 
@@ -41,7 +41,7 @@ availability_zone = "us-east-2a"
 
 ami_id = "ami-050cd642fd83388e4" 
 
--Run terraform init to initializes a working directory
+-Run terraform init to initialize working directory
 
 -Run terraform apply to create resources
 
