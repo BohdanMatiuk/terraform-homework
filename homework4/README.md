@@ -22,6 +22,24 @@ No modules.
 
 ## Inputs
 
+
+Create terraform.tfvars file with following content
+region = ""
+
+availability_zone = ""
+
+ami_id = ""
+
+To Launch EC2 instances in spesific regin please provide values ""
+
+example
+
+region = "us-east-2"
+
+availability_zone = "us-east-2a"
+
+ami_id = "ami-050cd642fd83388e4" 
+
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_ami_id"></a> [ami\_id](#input\_ami\_id) | n/a | `string` | `"ami-050cd642fd83388e4"` | no |
@@ -36,14 +54,3 @@ No modules.
 
 No outputs.
 
-
-Create terraform.tfvars file with following content
-region = ""
-availability_zone = ""
-ami_id = ""
-To Launch EC2 instances in spesific regin please provide values ""
-
-example
-region = "us-east-2"
-availability_zone = "us-east-2a"
-ami_id = "ami-050cd642fd83388e4" 
