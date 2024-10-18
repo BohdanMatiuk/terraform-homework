@@ -13,7 +13,7 @@ resource "aws_instance" "instance1" {
   key_name = aws_key_pair.homework.key_name
   availability_zone = "us-east-2a"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  user_data = file("apache2.sh")
+  user_data = file("apache.sh")
   
   tags = {
   Name = "web1"
@@ -25,7 +25,7 @@ resource "aws_instance" "instance2" {
   key_name = aws_key_pair.homework.key_name
   availability_zone = "us-east-2b"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  user_data = file("apache2.sh")
+  user_data = file("apache.sh")
   
   tags = {
   Name = "web2"
@@ -38,7 +38,7 @@ resource "aws_instance" "instance3" {
   key_name = aws_key_pair.homework.key_name
   availability_zone = "us-east-2c"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  user_data = file("apache2.sh")
+  user_data = file("apache.sh")
   
   tags = {
   Name = "web3"
